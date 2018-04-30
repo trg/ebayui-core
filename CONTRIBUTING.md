@@ -46,6 +46,17 @@ Please ensure all scripts in `package.json` are Unix *and* Windows friendly.
 
 To ensure that all components function correctly in both Marko v3 and v4, we run our entire test suite against both versions. This requires automated installation of Marko versions, and is best executed in the CI (to avoid conflicting with local environments). The CI runs a specific `build:ci` task in the NPM scripts for this purpose.
 
+By default when in the CI all browser tests will be ran against the supported list of browsers using [BrowserStack](http://browserstack.com). If you would like to manually test with your own BrowserStack account you can do so by adding a `.env` file to the root of this project with the following environment variables:
+
+```bash
+BUILD_NUMBER="local"
+REPO_SLUG="ebay/ebayui-core"
+BROWSERSTACK_USERNAME="YOUR BROWSERSTACK USERNAME"
+BROWSERSTACK_ACCESS_KEY="YOU BROWSERSTACK ACCESS KEY"
+```
+
+Finally run `yarn test:browserstack` to begin the tests.
+
 ## Pull Requests
 
 Please ensure an issue exists in GitHub before writing any code. Every pull request must have an associated issue for tracking and triage purposes.
