@@ -134,5 +134,11 @@
             "@role": "string"
         }
     },
-    "<ebay-pagination-item>": {}
+    "<ebay-pagination-item>": {},
+    "<ebay-radio>": {
+        "renderer": "./src/components/ebay-radio/index.js",
+        "@class": "string",
+        "@disabled": "boolean",
+        "@*": "expression"
+    }
 }

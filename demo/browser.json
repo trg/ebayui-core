@@ -13,6 +13,7 @@
         "../src/components/ebay-menu",
         "../src/components/ebay-notice",
         "../src/components/ebay-pagination",
-        "../src/components/ebay-select"
+        "../src/components/ebay-select",
+        "../src/components/ebay-radio"
     ]
 }
