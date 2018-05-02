@@ -134,5 +134,11 @@
             "@role": "string"
         }
     },
-    "<ebay-pagination-item>": {}
+    "<ebay-pagination-item>": {},
+    "<ebay-checkbox>": {
+        "renderer": "./src/components/ebay-checkbox/index.js",
+        "@class": "string",
+        "@disabled": "boolean",
+        "@*": "expression"
+    }
 }
